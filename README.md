@@ -11,16 +11,34 @@ This script performs person detection on a video using the YOLOv8 object detecti
 
 ## Usage
 
-1. Install required packages using `pip`:
+1. Clone the repository:
 
    ```bash
-   pip install opencv-python-headless ultralytics
+    git clone <repository_url>
+    cd <repository_name>
    ```
-2. Save the YOLOv8 model checkpoint (e.g., yolov8n.pt) in the same directory.
-3. Place the input video (video.mp4) in the same directory.
+2. Set up a virtual environment:
+
+    ```bash
+    python3 -m venv venv
+    ```
+    - On mac / linux
+    ```bash
+    source venv/bin/activate
+    ```
+    - On windows
+    ```bash
+    venv\Scripts\activate
+    ```
+
+
+3. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 4. Run the script:
     ```bash
-    python script.py
+    python main.py
     ```
 5. Press q to exit the detection process.
 
